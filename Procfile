@@ -1,0 +1,1 @@
+eb: gunicorn wine_api.wsgi
