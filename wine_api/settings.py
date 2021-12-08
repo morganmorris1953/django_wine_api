@@ -134,4 +134,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_heroku.settings(locals())
 # CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+CORS_ORIGIN_WHITELIST = ['https://morgan-wines-frontend.herokuapp.com']
