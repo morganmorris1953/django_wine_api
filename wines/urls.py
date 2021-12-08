@@ -1,14 +1,15 @@
-# from django.urls import path
-# from rest_framework import urlpatterns
-# from .views import WineViewSet
-# from rest_framework.routers import DefaultRouter
-# from . import views
+from django.urls import path
+from rest_framework import urlpatterns
+from .views import WineViewSet
+from rest_framework.routers import DefaultRouter
+from . import views
 from django.urls import path, include
 from .views import WineViewSet # This library gives us all of the functions usually found in views.py
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'', WineViewSet, basename='wine')
+# router.register(r'/', WineViewSet, basename='wine')
 urlpatterns = router.urls
 # urlpatterns = [
 #     path('', views.wine_list, name='wine_list'),

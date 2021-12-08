@@ -22,6 +22,7 @@ class WineViewSet(viewsets.ModelViewSet):
 # def wine_list(request):
 #     wines = Wine.objects.all()
 #     serialized_wines = WineSerializer(wines).all_wines
+    
 #     return JsonResponse(data=serialized_wines, status=200)
 
 # def wine_detail(request, wine_id):
